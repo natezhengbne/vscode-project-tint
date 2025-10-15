@@ -18,10 +18,7 @@ export async function applyTitleBarColors(bg: string, fg: string) {
 		"titleBar.activeForeground": fg,
 		"titleBar.inactiveBackground": bg,
 		"titleBar.inactiveForeground": fg,
-		"commandCenter.background": fg,
-		"commandCenter.foreground": bg,
-
-		// "titleBar.border": bg,
+		"titleBar.border": fg,
 	};
 
 	await config.update("workbench.colorCustomizations", next, target);
