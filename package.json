@@ -1,0 +1,60 @@
+{
+  "name": "project-tint",
+  "displayName": "project.tint",
+  "description": "",
+  "license": "MIT",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.105.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/natezhengbne/vscode-project-tint"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "projectTint.apply",
+        "title": "Project Tint: Apply (stub)"
+      },
+      {
+        "command": "projectTint.reset",
+        "title": "Project Tint: Reset Customizations"
+      }
+    ],
+    "configuration": {
+      "title": "Project Tint",
+      "properties": {
+        "projectTint.autoApply": {
+          "type": "boolean",
+          "default": true,
+          "description": "Automatically apply title bar color on startup without prompting."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src",
+    "package": "vsce package"
+  },
+  "devDependencies": {
+    "@types/node": "22.x",
+    "@types/vscode": "^1.105.0",
+    "@typescript-eslint/eslint-plugin": "^8.45.0",
+    "@typescript-eslint/parser": "^8.45.0",
+    "@vscode/vsce": "^3.6.2",
+    "eslint": "^9.36.0",
+    "typescript": "^5.9.3"
+  }
+}
