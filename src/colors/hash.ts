@@ -7,7 +7,6 @@ function hash32(str: string): number {
 	return h >>> 0;
 }
 
-// 一组区分度很高、偏中深的12色（可按需替换）
 const DEFAULT_PALETTE_12 = [
 	"#E53935", // red
 	"#8E24AA", // purple

@@ -18,7 +18,7 @@ export async function activate(context: vscode.ExtensionContext) {
 		? colorFromProjectName(projectName)
 		: cfg.get<string>("defaultBg", "#ff0000");
 	const fg = projectName
-		? contrastingText(projectName)
+		? contrastingText(bg)
 		: cfg.get<string>("defaultFg", "#ffffff");
 
 	if (autoApply) {

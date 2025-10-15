@@ -1,14 +1,18 @@
 {
   "name": "project-tint",
-  "displayName": "project.tint",
-  "description": "",
+  "displayName": "Project Tint",
+  "description": "Tint the Vscode on startup so multiple windows are easy to tell apart.",
+  "author": {
+    "name": "Nate"
+  },
+  "publisher": "nate",
   "icon": "assets/icon.png",
   "galleryBanner": {
     "color": "#373436",
     "theme": "dark"
   },
   "license": "MIT",
-  "version": "0.0.1-beta.1",
+  "version": "0.0.1-beta.4",
   "engines": {
     "vscode": "^1.105.0"
   },
